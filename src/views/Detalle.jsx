@@ -24,7 +24,7 @@ const Detalle = () => {
 
     useEffect(() => {
         getPokemon();
-    }, []);
+    }, [nombre]);
 
     return (
         <div className='d-flex justify-content-center pt-5 hero-2'>
@@ -59,28 +59,28 @@ const Detalle = () => {
                                     </span>{" "}
                                     {pokemon.weight}
                                 </p>
-                                <p>
+                                <div>
                                     <span className='caracteristicas'>
                                         Habilidades
                                     </span>
                                     <ul>
-                                        {pokemon.abilities.map((ab) => {
+                                        {pokemon.abilities.map((ab, index) => {
                                             return (
-                                                <li> - {ab.ability.name}</li>
+                                                <li key={index}> - {ab.ability.name}</li>
                                             );
                                         })}
                                     </ul>
-                                </p>
-                                <p>
+                                </div>
+                                <div>
                                     <span className='caracteristicas'>
                                         Tipo:
                                     </span>
                                     <ul>
-                                        {pokemon.types.map((type) => {
-                                            return <li> * {type.type.name}</li>;
+                                        {pokemon.types.map((type, index) => {
+                                            return <li key={index}> * {type.type.name}</li>;
                                         })}
                                     </ul>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

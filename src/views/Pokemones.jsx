@@ -58,7 +58,7 @@ const Pokemones = () => {
                     Ver Detalle{" "}
                 </Button>
 
-                <img src={img} className='img' />
+                <img src={img} className='img' alt="Meowth volando" />
             </div>
         </div>
     );

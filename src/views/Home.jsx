@@ -3,7 +3,7 @@ const Home = () => {
         <div className='hero'>
             <svg viewBox='0 0 1200 300'>
                 <symbol id='s-text'>
-                    <text text-anchor='middle' x='50%' y='100%'>
+                    <text textAnchor='middle' x='50%' y='100%'>
                         ¡Bienvenido!
                     </text>
                 </symbol>
