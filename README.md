@@ -1,6 +1,4 @@
 # Desafío Pokemon App para React II de Desafío Latam
 
-### NavLink
-### useNavigate
-### useParams
+Deploy en Netify https://pokemon-marlys.netlify.app/ para ver el proyecto.
 
